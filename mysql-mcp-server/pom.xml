@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.techsun.tools.mcp</groupId>
+        <artifactId>db-mcp-server</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.techsun.tools.mcp</groupId>
+    <artifactId>mysql-mcp-server</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0.0</version>
+
+    <dependencies>
+        <!-- 数据库驱动 -->
+        <dependency>
+            <groupId>org.mariadb.jdbc</groupId>
+            <artifactId>mariadb-java-client</artifactId>
+            <version>2.7.4</version>
+        </dependency>
+
+        <!-- solon mcp sdk -->
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>solon-lib</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.noear</groupId>
+            <artifactId>solon-ai-mcp</artifactId>
+        </dependency>
+    </dependencies>
+</project>
