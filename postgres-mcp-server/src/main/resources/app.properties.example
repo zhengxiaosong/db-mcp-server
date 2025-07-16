@@ -9,3 +9,13 @@ solon.logging.appender.file.maxFileSize=10 MB
 solon.logging.appender.file.maxHistory=7
 solon.logging.appender.cloud.level=INFO
 solon.logging.appender.cloud.enable=false
+
+# PostgreSQL ????????
+postgres.datasource.url=jdbc:postgresql://localhost:5432/your_db
+postgres.datasource.username=your_user
+postgres.datasource.password=your_password
+postgres.datasource.maximumPoolSize=10
+postgres.datasource.minimumIdle=2
+postgres.datasource.idleTimeout=60000
+postgres.datasource.connectionTimeout=30000
+postgres.datasource.poolName=PostgresMcpHikariCP
