@@ -1,0 +1,22 @@
+solon.app.name=mysql-mcp-server
+
+solon.logging.appender.console.enable=false
+solon.logging.appender.file.name=logs/${solon.app.name}
+solon.logging.appender.file.level=INFO
+solon.logging.appender.file.enable=true
+solon.logging.appender.file.extension=.log
+solon.logging.appender.file.maxFileSize=10 MB
+solon.logging.appender.file.maxHistory=7
+solon.logging.appender.cloud.level=INFO
+solon.logging.appender.cloud.enable=false
+
+# MySQL 数据库连接池配置
+mysql.datasource.url=jdbc:mysql://localhost:3306/your_db?useSSL=false&serverTimezone=UTC
+mysql.datasource.username=your_user
+mysql.datasource.password=your_password
+mysql.datasource.maximumPoolSize=10
+mysql.datasource.minimumIdle=2
+mysql.datasource.idleTimeout=60000
+mysql.datasource.connectionTimeout=30000
+mysql.datasource.poolName=MysqlMcpHikariCP
+
