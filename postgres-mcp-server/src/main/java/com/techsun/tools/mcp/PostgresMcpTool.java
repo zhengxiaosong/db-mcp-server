@@ -16,11 +16,6 @@ public class PostgresMcpTool {
         return PostgresDataSourceManager.getConnection();
     }
 
-    @ToolMapping(description = "查询天气预报")
-    public String get_weather(@Param(name = "location", description = "城市位置") String location) {
-        return "晴，14度";
-    }
-
     /**
      * 执行SQL查询（仅支持SELECT）
      */
